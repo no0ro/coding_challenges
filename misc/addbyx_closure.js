@@ -1,5 +1,4 @@
-//  Now we are going to create a function addByX that returns a function 
-// that will add an input by x.
+// Prompt: Create a function addByX that returns a function that will add an input by x.
 
 // const addByTwo = addByX(2);
 // addByTwo(1); //should return 3
