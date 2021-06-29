@@ -28,3 +28,19 @@ function addByX(inputNum) {
   console.log(addByTwo(2)); // 4
   console.log(addByTwo(1)); // 3 // its not accuming, its a new instance every time. and the addByX(2)..the 2 is constant. bc we're not ++ing 
   // Now call addByTwo with an input of 1 and log the output
+
+
+
+/* PSUDO:
+
+*/
+
+
+/* WORDING:
+
+*/
+
+
+/* NOTES & TAKE AWAYS:
+
+*/

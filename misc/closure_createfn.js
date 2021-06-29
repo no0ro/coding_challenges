@@ -32,3 +32,8 @@ console.log( myFunction() ); //should log: 'hello world'
 // then, we console.log the invocation of myFunction()
 // we will see the eveluated result of newFunction()....it's just being run under its new name, myFunction
 // 
+
+
+/* NOTES & TAKE AWAYS:
+
+*/
