@@ -5,4 +5,17 @@
 // console.log(sampleFunc()); 
 // // should log 'sample' to the console
 // console.log(helloFunc());
-// // should log 'hello' to the console
+
+
+function createFunctionWithInput(input) {
+    function inner(){
+      return input
+    }
+    return inner;
+  }
+  
+  const sampleFunc = createFunctionWithInput('sample');
+  console.log(sampleFunc()); // should log: 'sample'
+  const helloFunc = createFunctionWithInput('hello');
+  console.log(helloFunc()); // should log: 'hello'
+  
