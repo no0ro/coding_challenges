@@ -7,3 +7,23 @@ it will simply return the output value from the first time it was called.
 */
 
 
+function once(callback){ // function(num) 
+    let counter = 0;
+    let callbackValue = null; 
+    
+    function inner(num){
+      if (counter === 0) { // if this is the first call
+         counter++; // increment the counter 
+           callbackValue = callback(num); //assign the result of calling the callback, to the Backpack data,  variable callbackValue
+         return callbackValue // return value 
+      } else { // if this is not the first call 
+         return  callbackValue // return whatever value is saved in the OLER, backpack variable callbackValue
+      }
+    }
+    return inner;
+  }
+  
+  const addByTwoOnce = once(function(num) {
+    return num + 2;
+  });
+  
