@@ -30,6 +30,7 @@ function fizzBuzz( counter = 1, num ) {
         return fizzBuzz( counter + 1, num )
     }
 };
+
 fizzBuzz(1, 16)
 
 console.log(result)
