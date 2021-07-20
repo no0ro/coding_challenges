@@ -14,5 +14,7 @@ function  pow( base, exponent, newBase = base) {
 	return exponent <= 1 ? newBase : pow(base, exponent - 1, base * newBase)
 }
 
-
+console.log(pow(2, 3));
+console.log(pow(2, 4)); // -> 16
+console.log(pow(3, 5)); // -> 243
 
