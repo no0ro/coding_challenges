@@ -9,3 +9,10 @@ Input 2: {Number} exponent - exponent the base is raised to
 Output: {Number} - expected 
 
 */
+
+function  pow( base, exponent, newBase = base) { 
+	return exponent <= 1 ? newBase : pow(base, exponent - 1, base * newBase)
+}
+
+
+
