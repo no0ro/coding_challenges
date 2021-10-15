@@ -4,14 +4,24 @@
 //  and so forth. After returning the last element of the array, the next invocation will return the first element of the array again, 
 //  and continue on with the second after that, and so forth.
 
-
-
-
-
-
-
-
-
+function cycleIterator(arr){
+    let counter = 0
+    
+    function looper(){
+      console.log(counter)
+      if (counter >= arr.length){
+        counter = 0
+        let result = arr[counter]
+        counter++
+        return result
+      } else {
+        let result = arr[counter]
+        counter++
+        return result
+      }    
+    }
+    return looper
+  }
 
 
 
