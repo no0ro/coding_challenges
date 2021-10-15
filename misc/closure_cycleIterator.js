@@ -36,16 +36,37 @@ console.log(getDay());
 
 
 /* 
-/ --> sudo code
+/// --> sudo code of ^ solution 
 function cycleIterator(arr){
-    / define counter
+    /// define counter
     function inner(){
-      / check if counter is greater than arr.length
-          / true? reset counter to 0, let x = arr[counter], counter++, return x
-      / else
-          / let x = arr[counter], counter++, return x
+      /// check if counter is greater than arr.length
+          /// true? reset counter to 0, let x = arr[counter], counter++, return x
+      /// else
+          /// let x = arr[counter], counter++, return x
    
     }
     return inner
   }
-  */
+*/
+
+
+
+/*
+/// --> alternative solution 
+
+function cycleIterator(arr){
+    let index = 0
+    
+    return function(){
+        const result = array[index++];
+         if (index >= arr.length) index = 0; 
+         return result;
+    }
+}
+  
+/// it will eveluate the current value of index before it 
+/// increments and updates the index variable 
+*/
+
+  
