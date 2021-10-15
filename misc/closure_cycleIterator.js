@@ -24,7 +24,6 @@ function cycleIterator(arr){
   }
 
 
-
 const threeDayWeekend = ['Fri', 'Sat', 'Sun'];
 const getDay = cycleIterator(threeDayWeekend);
 console.log(getDay()); // should log: 'Fri'
@@ -34,3 +33,19 @@ console.log(getDay()); // should log: 'Fri'
 console.log(getDay());
 console.log(getDay());
 console.log(getDay());
+
+
+/* 
+/ --> sudo code
+function cycleIterator(arr){
+    / define counter
+    function inner(){
+      / check if counter is greater than arr.length
+          / true? reset counter to 0, let x = arr[counter], counter++, return x
+      / else
+          / let x = arr[counter], counter++, return x
+   
+    }
+    return inner
+  }
+  */
