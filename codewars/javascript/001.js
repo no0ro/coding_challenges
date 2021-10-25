@@ -11,21 +11,29 @@ function findOutlier(integers){
     let oddsCount = 0;
   
     for (let i =0; i < integers.length; i++){
-    
+        if (integers[i] === 0 || integers[i] % 2 === 0 ){
+            
+        }
+        if (integers[i] === 1  || integers[i] % 3 === 0){
+          
+        }
     }
   
     console.log(evensCount)
     console.log(oddsCount)
   
     if (evensCount > oddsCount) { //all evens
+        let x = integers.find(int => {
+         })
+         return x
 
     }
     if (evensCount < oddsCount) { //all oddss
-      
+        integers.find(int => {
+            return int % 2 === 0
+        })
     }
-    
   }
-  
   
   
   findOutlier([0, 1, 2]) //1
