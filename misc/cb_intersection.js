@@ -18,3 +18,15 @@ function intersection(arrayOfArrays) {
        })
     });
 };
+
+
+
+/*  ALTERNATIVE SOLUTION
+const intersection = arrayOfArrays => {
+  return arrayOfArrays.reduce((initialized, currentArr) => {
+    return initialized.filter(element => {
+      return currentArr.includes(element)
+    })
+  });
+}
+*/
