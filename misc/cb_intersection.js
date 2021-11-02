@@ -1,4 +1,5 @@
-// prompt
+// Prompt
+
 // Construct a fn `intersection` that compares input arrays and returns
 // a new array with elements found in all the inputs. BONUS - use reduce
 
@@ -7,3 +8,13 @@
 // const arr2 = [15, 88, 1, 3,  5, 7];
 // const arr3 = [1, 10, 15, 5, 20];
 // console.log(intersection([arr1, arr2, arr3])); // should log: [5, 15]
+
+// ---------------------------------
+
+function intersection(arrayOfArrays) {
+    return arrayOfArrays.reduce(function(firstArr, currentArr) {
+       return firstArr.filter(function(element) {
+          return currentArr.indexOf(element) > -1;
+       })
+    });
+};
