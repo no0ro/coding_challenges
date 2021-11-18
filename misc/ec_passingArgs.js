@@ -14,3 +14,10 @@ function isX2(num) {
 
 const one = isX1(5);
 const two = isX2(3);
+
+      // const one = isX1(/* ADD CODE HERE */);
+      // const two = isX2(/* ADD CODE HERE */);
+
+
+      console.log(one); // should log: true
+      console.log(two); // should log: true  
